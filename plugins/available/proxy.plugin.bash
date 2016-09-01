@@ -10,6 +10,7 @@ disable-proxy ()
 	unset https_proxy
 	unset HTTP_PROXY
 	unset HTTPS_PROXY
+	unset all_proxy
 	unset ALL_PROXY
 	unset no_proxy
 	unset NO_PROXY
@@ -29,6 +30,7 @@ enable-proxy ()
 	export https_proxy=$BASH_IT_HTTPS_PROXY
 	export HTTP_PROXY=$http_proxy
 	export HTTPS_PROXY=$https_proxy
+	export all_proxy=$http_proxy
 	export ALL_PROXY=$http_proxy
 	export no_proxy=$BASH_IT_NO_PROXY
 	export NO_PROXY=$no_proxy
@@ -48,6 +50,7 @@ enable-proxy-alt ()
 	export https_proxy=$BASH_IT_HTTPS_PROXY_ALT
 	export HTTP_PROXY=$http_proxy
 	export HTTPS_PROXY=$https_proxy
+	export all_proxy=$http_proxy
 	export ALL_PROXY=$http_proxy
 	export no_proxy=$BASH_IT_NO_PROXY
 	export NO_PROXY=$no_proxy
