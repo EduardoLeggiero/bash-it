@@ -107,7 +107,7 @@ bash-it-show-proxy ()
 	echo "============================="
 	echo "(These variables will be used to set the proxy when you call 'enable-proxy')"
 	echo ""
-	env | grep -e "BASH_IT.*PROXY"
+	env | grep -e "BASH_IT_.*_PROXY"
 }
 
 npm-show-proxy ()
